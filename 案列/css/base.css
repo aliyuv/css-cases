@@ -1,0 +1,57 @@
+:root {
+    --primary-bg-color: rgb(248, 250, 252);
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --secondary-text-color: rgb(100, 116, 139);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --content-text-color: rgb(85, 90, 96);
+    --skeleton-color-start: rgba(0, 0, 0, 0.1);
+    --skeleton-color-mid: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0.18rem 0.12rem;
+    padding: 0.1rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    border-radius: 0.1rem;
+    box-shadow: 0 0 0.1rem var(--border-color);
+    font-size: 0.15rem;
+    color: var(--primary-text-color);
+    border: 0.01rem solid var(--border-color);
+    line-height: 1.67; /* 0.25rem / 0.15rem */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item1 img,
+#skeleton-loader {
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.flex-item2>span {
+    font-weight: bold;
+}
+
+.course-title {
+    font-size: 0.14rem;
+    color: var(--secondary-text-color);
+}
+
+.content {
+    margin-top: 0.1rem;
+    font-size: 0.14rem;
+    color: var(--content-text-color);
+}
