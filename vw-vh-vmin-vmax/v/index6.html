@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with vmin/vmax</title>
+    <style>
+        body,
+        html {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+
+        .circle {
+            width: 50vmin;
+            height: 50vmin;
+            background-color: #3498db;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4vmin 8vmax rgba(0, 0, 0, 0.2);
+        }
+
+        .circle::after {
+            content: '';
+            width: 30vmin;
+            height: 30vmin;
+            background-color: #2ecc71;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

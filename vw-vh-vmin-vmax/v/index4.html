@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>视口单位综合案例</title>
+    <style>
+        /* 重置默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 导航栏样式 */
+        .nav-header {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navigation {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2vmin;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: calc(1rem + 1vmin);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2vmin;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: calc(0.8rem + 0.8vmin);
+        }
+
+        /* 欢迎部分样式 */
+        .welcome-section {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://i.loli.net/2021/04/07/QgHvB7hlJyCnN8s.jpg');
+            /* 请替换为您的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10vh;
+            /* 避开固定导航栏 */
+        }
+
+        .content {
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 4vmin;
+            border-radius: 2vmin;
+        }
+
+        .content h1 {
+            font-size: calc(2rem + 2vmax);
+            margin-bottom: 2vmin;
+        }
+
+        .content p {
+            font-size: calc(1rem + 1vmin);
+            margin-bottom: 4vmin;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1vmin 3vmin;
+            font-size: calc(1rem + 0.5vmin);
+            color: #fff;
+            background-color: #ff5722;
+            text-decoration: none;
+            border-radius: 1vmax;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                /* 简化处理，小屏幕隐藏导航链接 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav class="navigation">
+            <a href="#" class="logo">LOGO</a>
+            <ul class="nav-links">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <div class="content">
+            <h1>欢迎来到我们的世界</h1>
+            <p>探索无限可能，开启精彩旅程</p>
+            <a href="#" class="btn">立即加入</a>
+        </div>
+    </section>
+</body>
+
+</html>

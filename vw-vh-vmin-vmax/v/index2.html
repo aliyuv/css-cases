@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 10vw;
+            height: 10vh;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://i.loli.net/2021/04/07/QgHvB7hlJyCnN8s.jpg" alt="">
+    <script>
+        const num1 = window.innerWidth;
+        const num2 = window.outerWidth;
+        const num3 = screen.width;
+        const imgWidth = document.querySelector('img').width;
+        console.log('浏览器内部宽度大小', num1);
+        console.log('整个浏览器的宽度大小', num2);
+        console.log('显示器的宽度大小', num3);
+        console.log('图片现在的宽度', imgWidth)
+
+        console.log('--------------------')
+        let num11 = window.innerHeight;
+        let num22 = window.outerHeight;
+        let num33 = screen.height;
+        let imgHeight = document.querySelector('img').height;
+        console.log('浏览器内部高度大小', num11);
+        console.log('整个浏览器的高度大小', num22);
+        console.log('显示器的高度大小', num33);
+        console.log('图片现在的宽度', imgHeight)
+    </script>
+</body>
+
+</html>

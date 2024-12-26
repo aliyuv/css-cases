@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Lato';
+        }
+
+        .percent-parent {
+            width: 50%;
+            height: 300px;
+            background-color: orange;
+            margin-bottom: 75px;
+            padding-top: 75px;
+        }
+
+        .percent-child {
+            width: 80%;
+            height: 150px;
+            background-color: lightblue;
+        }
+
+        .viewport-parent {
+            width: 50vw;
+            height: 300px;
+            background-color: lawngreen;
+            margin-bottom: 75px;
+            padding-top: 75px;
+        }
+
+        .viewport-child {
+            width: 80vw;
+            height: 150px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Viewport Units and Percentage</h1>
+
+    <div class="percent-parent">
+        <div class="percent-child"></div>
+    </div>
+
+    <div class="viewport-parent">
+        <div class="viewport-child"></div>
+    </div>
+</body>
+
+</html>
